@@ -22,4 +22,12 @@ Created a class instead of using multiple functions to have all under one object
 Python and conda were in separate file paths which was giivng problems with the packages when running the file. I had to change the file path of the python it was using (multiple pythons on system).
 Included rounds to make sure it accounts for when no player reaches 3 wins but win the best of three due to ties.
 
+# Screenshots
+
+![Drawing to computer](img/Draw.png)
+![Losing to computer](img/Loss.png)
+![Hand gesture](img/Hand.png)
+
+
 ## By Thilakshan Balasubramaniam
+
