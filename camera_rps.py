@@ -64,15 +64,17 @@ def get_winner(computer_choice, user_choice):
 
 def play():
     while True:
-        if computer_wins < 3 and user_wins < 3 or rounds != 5:
+        if computer_wins == 3 or user_wins == 3 or rounds == 5:
+            if computer_wins > user_wins:
+                print("You lost the game")
+            else:
+                print("You won the game")
+            break
+        else:
             computer_choice = get_computer_choice()
             user_choice =  get_user_choice()
             get_winner(computer_choice, user_choice)
             print(computer_wins)
             print(user_wins)
-        elif computer_wins > user_wins:
-            print("You lost the game")
-        else:
-            print("You won the game")
 
 play()
