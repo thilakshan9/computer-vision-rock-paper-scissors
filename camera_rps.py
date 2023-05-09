@@ -56,14 +56,16 @@ def get_winner(computer_choice, user_choice):
         computer_wins += 1
     # The above prints a message according to the condition that it meets
 
+def play():
+    while computer_wins <3 and user_wins < 3:
+        computer_choice = get_computer_choice()
+        user_choice =  get_user_choice()
+        get_winner(computer_choice, user_choice)
+        print(computer_wins)
+        print(user_wins)
+    if computer_wins == 3:
+        print("You lost the game")
+    else:
+        print("You won the game")
 
-while computer_wins <3 and user_wins < 3:
-    computer_choice = get_computer_choice()
-    user_choice =  get_user_choice()
-    get_winner(computer_choice, user_choice)
-    print(computer_wins)
-    print(user_wins)
-if computer_wins == 3:
-    print("You lost the game")
-else:
-    print("You won the game")
+play()
