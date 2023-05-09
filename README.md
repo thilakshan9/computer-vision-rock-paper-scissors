@@ -10,4 +10,13 @@ Set up a conda environment and installed packages: opencv-python, tensorflow and
 Created two functions 1. To handle with user input 2. To generate a random response as the CPU response. I randomised the CPU response from a list of options and made sure that the user input function allowed me to input a string. 
 
 # Milestone 4
-The game decided a winner based on the classic rules of rock-paper-scissors using if-elif-else statements. Used a while loop to create a best of three rounds game and keep track of the wins of each player. I also wrapped everything related to the game in function. 
+The game decided a winner based on the classic rules of rock-paper-scissors using if-elif-else statements. I also wrapped everything related to the game in function. 
+
+# Milestone 5
+Used opencv-python from the previous code to implement into the rock-paper-scissors game to play against the computer. Used a while loop to create a best of three rounds game and keep track of the wins of each player. I added a 3 second counter to allow the user to come to a final decision of their choice instead of reading the input from the cameras and comparing it to the computer's hand without stopping.
+
+# Milestone 6
+Created a class instead of using multiple functions to have all under one object - this improved readability and made the code a lot cleaner.
+
+# Bugs and Fixes
+Python and conda were in separate file paths which was giivng problems with the packages when running the file. I had to change the file path of the python it was using (multiple pythons on system).
