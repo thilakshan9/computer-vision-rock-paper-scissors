@@ -8,3 +8,6 @@ Set up a conda environment and installed packages: opencv-python, tensorflow and
 
 # Milestone 3
 Created two functions 1. To handle with user input 2. To generate a random response as the CPU response. I randomised the CPU response from a list of options and made sure that the user input function allowed me to input a string. 
+
+# Milestone 4
+The game decided a winner based on the classic rules of rock-paper-scissors using if-elif-else statements. Used a while loop to create a best of three rounds game and keep track of the wins of each player. I also wrapped everything related to the game in function. 
