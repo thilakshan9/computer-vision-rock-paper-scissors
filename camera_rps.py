@@ -38,32 +38,43 @@ def get_user_choice():
 
 computer_wins = 0
 user_wins = 0
+rounds = 0
 def get_winner(computer_choice, user_choice):
-    global computer_wins, user_wins
+    global computer_wins, user_wins, rounds
     if computer_choice == user_choice:
         print("It is a tie!")
+        rounds +=1
     elif user_choice == "scissors" and computer_choice == "paper":
         print("You won this round !")
         user_wins += 1
+        rounds +=1
     elif user_choice == "paper" and computer_choice == "rock":
         print("You won this round!")
         user_wins += 1
+        rounds +=1
     elif user_choice == "rock" and computer_choice == "scissors":
         print("You won this round!")
         user_wins += 1
+        rounds +=1
     else:
         print("You lost this round")
         computer_wins += 1
+        rounds +=1
     # The above prints a message according to the condition that it meets
 
+def play():
+    while True:
+        if computer_wins == 3 or user_wins == 3 or rounds == 5:
+            if computer_wins > user_wins:
+                print("You lost the game")
+            else:
+                print("You won the game")
+            break
+        else:
+            computer_choice = get_computer_choice()
+            user_choice =  get_user_choice()
+            get_winner(computer_choice, user_choice)
+            print(computer_wins)
+            print(user_wins)
 
-while computer_wins <3 and user_wins < 3:
-    computer_choice = get_computer_choice()
-    user_choice =  get_user_choice()
-    get_winner(computer_choice, user_choice)
-    print(computer_wins)
-    print(user_wins)
-if computer_wins == 3:
-    print("You lost the game")
-else:
-    print("You won the game")
+play()
