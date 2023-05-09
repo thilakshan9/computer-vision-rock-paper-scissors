@@ -64,7 +64,7 @@ def get_winner(computer_choice, user_choice):
 
 def play():
     while True:
-        if computer_wins < 3 and user_wins < 3 or rounds == 5:
+        if computer_wins < 3 and user_wins < 3 or rounds != 5:
             computer_choice = get_computer_choice()
             user_choice =  get_user_choice()
             get_winner(computer_choice, user_choice)
