@@ -1,10 +1,10 @@
 # Computer Vision RPS
 
 # Milestone 1
-Created a model using teachable machine and added it to the root folder.
+Created a model using teachable machine by providing pictures of my hand doing the hand gestures for rock-paper-scissors and added it to the root folder.
 
 # Milestone 2
-Set up a conda virtual environment and installed packages: opencv-python, tensorflow and ipykernel.Dealt with the game logic in another function. Checked the model worked by using code given to me by AICore and got familiar with the code. Used opencv-python for computer vision and made sure my hand signs were being recognised. 
+Set up a conda virtual environment and installed packages: opencv-python, tensorflow and ipykernel.Dealt with the game logic in another function. Checked the model worked by using code given to me by AICore and got familiar with the code. Used opencv-python for computer vision and made sure my hand signs were being recognised.  Saved the installed packages to a file for ease of access if someone else wants to use the virtual environment.
 
 # Milestone 3
 Created two functions 1. To handle with user input 2. To generate a random response as the CPU response. I randomised the CPU response from a list of options and made sure that the user input function allowed me to input a string. 
@@ -22,4 +22,12 @@ Created a class instead of using multiple functions to have all under one object
 Python and conda were in separate file paths which was giivng problems with the packages when running the file. I had to change the file path of the python it was using (multiple pythons on system).
 Included rounds to make sure it accounts for when no player reaches 3 wins but win the best of three due to ties.
 
+# Screenshots
+
+![Drawing to computer](img/Draw.png)
+![Losing to computer](img/Loss.png)
+![Hand gesture](img/Hand.png)
+
+
 ## By Thilakshan Balasubramaniam
+
