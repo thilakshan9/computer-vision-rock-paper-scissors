@@ -34,13 +34,15 @@ def get_user_choice():
     user_choice = get_prediction()
     print(f"You choose {user_choice}")
     return user_choice
-    cap.release()
-    cv2.destroyAllWindows()
 
+
+computer_wins = 0
+user_wins = 0
 def get_winner(computer_choice, user_choice):
+    global computer_wins, user_wins
     if computer_choice == user_choice:
         print("It is a tie!")
-    if user_choice == "scissors" and computer_choice == "paper":
+    elif user_choice == "scissors" and computer_choice == "paper":
         print("You won this round !")
         user_wins += 1
     elif user_choice == "paper" and computer_choice == "rock":
@@ -50,22 +52,18 @@ def get_winner(computer_choice, user_choice):
         print("You won this round!")
         user_wins += 1
     else:
-        print("You lost")
+        print("You lost this round")
         computer_wins += 1
     # The above prints a message according to the condition that it meets
 
-def play():
-    computer_wins = 0
-    user_wins = 0
-    while computer_wins <3 or user_wins < 3:
-        computer_choice = get_computer_choice()
-        user_choice =  get_user_choice()
-        get_winner(computer_choice, user_choice)
-        print(computer_wins)
-        print(user_wins)
-    if computer_wins == 3:
-        print("You lost the game")
-    else:
-        print("You won the game")
 
-play()
+while computer_wins <3 and user_wins < 3:
+    computer_choice = get_computer_choice()
+    user_choice =  get_user_choice()
+    get_winner(computer_choice, user_choice)
+    print(computer_wins)
+    print(user_wins)
+if computer_wins == 3:
+    print("You lost the game")
+else:
+    print("You won the game")
