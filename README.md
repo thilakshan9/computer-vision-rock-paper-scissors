@@ -1,5 +1,10 @@
 # Computer Vision RPS
 
+# How to install virtual environment
+1. conda create --name new_env
+1. conda install pip
+1. pip install requirements.txt
+
 # Milestone 1
 Created a model using teachable machine by providing pictures of my hand doing the hand gestures for rock-paper-scissors and added it to the root folder.
 
