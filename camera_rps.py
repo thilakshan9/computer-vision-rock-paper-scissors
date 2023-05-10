@@ -39,6 +39,7 @@ def get_user_choice():
 computer_wins = 0
 user_wins = 0
 rounds = 0
+
 def get_winner(computer_choice, user_choice):
     global computer_wins, user_wins, rounds
     if computer_choice == user_choice:
@@ -65,7 +66,9 @@ def get_winner(computer_choice, user_choice):
 def play():
     while True:
         if computer_wins == 3 or user_wins == 3 or rounds == 5:
-            if computer_wins > user_wins:
+            if computer_wins == user_wins:
+                print("You tied the best of three")
+            elif computer_wins > user_wins:
                 print("You lost the game")
             else:
                 print("You won the game")
